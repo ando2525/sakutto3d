@@ -1,0 +1,30 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+  background-color: #fff;
+}
+
+/* タブレットでのスタイル */
+@media (max-width: 768px) {
+  .box {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+/* モバイルでのスタイル */
+@media (max-width: 640px) {
+  .box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
