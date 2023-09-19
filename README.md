@@ -6,10 +6,12 @@
 <br/>　以上のような背景から今回メディアサイトをして構築するに至りました。
 <br/><br/>https://sakutto3d.vercel.app/
 
+
 <h2>使用スタック</h2>
 <h3>・Front End</h3>
 React/Next.js, TypeScript
-・CI/CD
+<h3>・CI/CD</h3>
+
 vercel
 ・Source Code Management
 Git/GitHub
