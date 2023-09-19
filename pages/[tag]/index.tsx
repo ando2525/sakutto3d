@@ -6,6 +6,7 @@ import { Header } from "../../components/global/Header/Index";
 import { Footer } from "../../components/global/Footer/Index";
 import { Article } from "../../components/page/Article/Index";
 import Image from "next/image";
+import { GetStaticProps } from "next";
 
 export default function Category({ page }) {
   if (!page) {
@@ -71,7 +72,7 @@ export default function Category({ page }) {
 //     fallback: true,
 //   };
 // };
-export const getStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const { tag } = context.params;
   const page = await getPostsByCategory(databaseId, tag);
   return {

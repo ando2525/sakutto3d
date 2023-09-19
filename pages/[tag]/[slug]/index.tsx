@@ -13,6 +13,7 @@ import styles from "../../post.module.scss";
 import { Header } from "../../../components/global/Header/Index";
 import { Footer } from "../../../components/global/Footer/Index";
 import { Sidebar } from "../../../components/page/sidebar/Index";
+import { GetStaticProps } from "next";
 
 const Text = ({ text }) => {
   if (!text) {
@@ -343,7 +344,7 @@ export default function Post({ page, blocks }) {
   );
 }
 
-export const getStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params;
   const database = await getDatabase(databaseId);
   const uuid = await getUUIDFromSlug(slug, database);
