@@ -9,8 +9,8 @@
 
 <h2>仕様スタック</h2>
 <h3>Frontend</h3>
-　　　- React/Next.js
-<br/> - TypeScript
+　　- React/Next.js
+<br/>　　- TypeScript
 <h3>Backend/Server-Side</h3>
 　　- Node.js
 <h3>UI Frameworks & Libraries</h3>
