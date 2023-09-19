@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 const DynamicThreeComponent = dynamic(
-  () => import("../components/page/example/example"),
+  () => import("../components/page/example/examples"),
   {
     ssr: false,
   }
