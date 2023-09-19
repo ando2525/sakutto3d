@@ -71,6 +71,15 @@ export default function Category({ page }) {
 //     fallback: true,
 //   };
 // };
+export const getStaticProps = async (context) => {
+  const { tag } = context.params;
+  const page = await getPostsByCategory(databaseId, tag);
+  return {
+    props: {
+      page,
+    },
+  };
+};
 export const getStaticPaths = async () => {
   const database = await getDatabase(databaseId);
 
@@ -94,15 +103,5 @@ export const getStaticPaths = async () => {
   return {
     paths: uniqueTags.map((tag) => ({ params: { tag: tag.name } })),
     fallback: true,
-  };
-};
-
-export const getStaticProps = async (context) => {
-  const { tag } = context.params;
-  const page = await getPostsByCategory(databaseId, tag);
-  return {
-    props: {
-      page,
-    },
   };
 };

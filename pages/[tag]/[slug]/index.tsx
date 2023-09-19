@@ -343,6 +343,26 @@ export default function Post({ page, blocks }) {
   );
 }
 
+export const getStaticProps = async (context) => {
+  const { slug } = context.params;
+  const database = await getDatabase(databaseId);
+  const uuid = await getUUIDFromSlug(slug, database);
+
+  if (!uuid) {
+    return { notFound: true };
+  }
+
+  const page = await getPageTitle(uuid);
+  const blocks = await getBlocks(uuid);
+
+  return {
+    props: {
+      page,
+      blocks,
+    },
+  };
+};
+
 export const getStaticPaths = async () => {
   const database = await getDatabase(databaseId);
 
@@ -372,25 +392,5 @@ export const getStaticPaths = async () => {
   return {
     paths: paths,
     fallback: true,
-  };
-};
-
-export const getStaticProps = async (context) => {
-  const { slug } = context.params;
-  const database = await getDatabase(databaseId);
-  const uuid = await getUUIDFromSlug(slug, database);
-
-  if (!uuid) {
-    return { notFound: true };
-  }
-
-  const page = await getPageTitle(uuid);
-  const blocks = await getBlocks(uuid);
-
-  return {
-    props: {
-      page,
-      blocks,
-    },
   };
 };
