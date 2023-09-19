@@ -13,10 +13,6 @@ export default function Category({ page }) {
   }
   return (
     <div>
-      <Head>
-        <title>{page[0].properties.Tags.multi_select[0].name}の記事一覧</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <article className="w-100">
         <section className="h-96 bg-[url('/tag-back.jpg')] bg-cover">

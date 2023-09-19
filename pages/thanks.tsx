@@ -1,30 +1,31 @@
-import styles from "../components/page/thanks/Thanks.module.scss";
 import { Header } from "../components/global/Header/Index";
+import { Footer } from "../components/global/Footer/Index";
+import { Head } from "next/document";
+import Link from "next/link";
 
 export default function Thanks() {
   return (
     <>
-      <div className={styles.thanks}>
+      <div className="h-full">
         <Header />
-        <div className={styles.wrapper}>
-          <div className={styles.container}>
-            <div className={styles.inner}>
-              <div className={styles.title}>
-                お問い合わせありがとうございます。
-                <br />
-                48時間以内にお返事致しますので、しばらくお待ちください。
-              </div>
+        <div className="flex items-center justify-center h-screen">
+          <div className="">
+            <div className="h-full text-center">
+              お問い合わせありがとうございます。
+              <br />
+              48時間以内にお返事致しますので、しばらくお待ちください。
             </div>
-            <div className={styles["button-border-gradient-wrap"]}>
-              <a
-                href=""
-                className={`${styles.button} ${styles["button-border-gradient"]}`}
+            <div className="text-center mt-10">
+              <Link
+                href="/"
+                className="pt-3 pb-0.5 py-1 border-stone-600 border-b-2"
               >
-                <span className={styles["button-span"]}>ホームに戻る</span>
-              </a>
+                トップページ
+              </Link>
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

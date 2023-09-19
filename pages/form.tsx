@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { Header } from "../components/global/Header/Index";
 import { Footer } from "../components/global/Footer/Index";
+import { Head } from "next/document";
 
 export default function Form() {
   const router = useRouter();
@@ -8,7 +9,7 @@ export default function Form() {
   const registerUser = async (event) => {
     event.preventDefault();
 
-    const res = await fetch("/lib/sendmail", {
+    const res = await fetch("/api/sendmail", {
       body: JSON.stringify({
         name: event.target.name.value,
         email: event.target.email.value,

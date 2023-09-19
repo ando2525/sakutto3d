@@ -266,10 +266,6 @@ export default function Post({ page, blocks }) {
   }
   return (
     <div>
-      <Head>
-        <title>{page.properties.Name.title[0].plain_text}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <main className="w-100">
         <section className="h-96 bg-[url('/3D-back.jpg')] bg-cover">

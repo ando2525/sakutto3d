@@ -30,11 +30,6 @@ export default function Home({ posts }) {
 
   return (
     <div className="h-full">
-      <Head>
-        <title>Notion Next.js blog</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="h-full">
         <Header />
         <section className="h-3/5 ">
