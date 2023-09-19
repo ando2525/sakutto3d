@@ -7,12 +7,14 @@
 <br/><br/>https://sakutto3d.vercel.app/
 
 
-<h2>使用スタック</h2>
+<h2>仕様スタック</h2>
 <h3>Frontend</h3>
- - React/Next.js
+　　　- React/Next.js
 <br/> - TypeScript
+<h3>Backend/Server-Side</h3>
+　　- Node.js
 <h3>UI Frameworks & Libraries</h3>
- - Tailwind CSS
+　　- Tailwind CSS
 <h3>CI/CD</h3>
  - vercel
 <h3>Source Code Management</h3>
