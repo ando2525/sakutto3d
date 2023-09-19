@@ -8,13 +8,12 @@
 
 
 <h2>使用スタック</h2>
-<h3>・Front End</h3>
+<h3>・Frontend</h3>
 React/Next.js, TypeScript
 <h3>・CI/CD</h3>
-
 vercel
-・Source Code Management
+<h3>・Source Code Management</h3>
 Git/GitHub
-・Others
+<h3>・Others</h3>
 SendGrid
 React-Three-Fiber
