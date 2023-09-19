@@ -1,38 +1,24 @@
-This is a [Next.js](https://nextjs.org/) blog using [Notions Public API](https://developers.notion.com).
+![3Dsakutto-trans](https://github.com/ando2525/sakutto3d/assets/103553194/4f295819-83a6-4786-b6b2-213681652d24)
 
-__Demo:__ [https://notion-blog-nextjs-coral.vercel.app](https://notion-blog-nextjs-coral.vercel.app)
+<h2>サービス概要</h2>
+　「サクッと3D」は主にWEBエンジニアに向けて、手軽に3Dモデルをサイトに導入できるように解説したサイトです。同業者とデザイン面で差別化を図るために3Dモデルを導入することは、1つの戦略であると言えます。３Dモデルを導入するために、Three.jsやBabylon.jsを用いて解説しているサイトは多く公開されています。しかし、その多くが初学者にとっては導入からコードの解説に至るまで、煩雑に思えます。また、そのためにThree.jsやBabylon.jsを1から10まで学習し、習得するには多くの時間とコストを要します。
+<br/>　現在では、より手軽に3Dサイトを導入できるためのツールやパッケージが多く存在しているものの、多くがあまり知名度が高くなく、それらの導入方法や使い方を解説したサイトがほとんど存在していません。
+<br/>　以上のような背景から今回メディアサイトをして構築するに至りました。
+<br/><br/>URL:　https://sakutto3d.vercel.app/
 
-__How-it-works/Documentation:__ [https://samuelkraft.com/blog/building-a-notion-blog-with-public-api](https://samuelkraft.com/blog/building-a-notion-blog-with-public-api)
 
-## Getting Started
-
-First, follow Notions [getting started guide](https://developers.notion.com/docs/getting-started) to get a `NOTION_TOKEN` and a `NOTION_DATABASE_ID`, then add them to a file called `.env.local`.
-
-As a reference here's the Notion table I am using: https://www.notion.so/5b53abc87b284beab0c169c9fb695b4d?v=e4ed5b1a8f2e4e12b6d1ef68fa66e518
-
-```
-NOTION_TOKEN=
-NOTION_DATABASE_ID=
-```
-
-Install dependencies
-
-```bash
-npm install
-# or
-yarn
-```
-
-Start the server with
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-#### Deploy to vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fsamuelkraft%2Fnotion-blog-nextjs&env=NOTION_TOKEN,NOTION_DATABASE_ID&envDescription=Please%20add%20NOTION_TOKEN%20and%20NOTION_DATABASE_ID%20that%20is%20required%20to%20connect%20the%20blog%20to%20your%20notion%20account.&envLink=https%3A%2F%2Fdevelopers.notion.com%2Fdocs%2Fgetting-started&project-name=notion-blog-nextjs&repo-name=notion-blog-nextjs&demo-title=Notion%20Blog%20Next%20JS&demo-description=%20This%20is%20a%20Next.js%20blog%20using%20Notions%20Public%20API.&demo-url=notion-blog-nextjs-coral.vercel.app)
+<h2>仕様スタック</h2>
+<h3>Frontend</h3>
+　- React/Next.js
+<br/>　- TypeScript
+<h3>Backend/Server-Side</h3>
+　- Node.js
+<h3>UI Frameworks & Libraries</h3>
+　- Tailwind CSS
+<h3>CI/CD</h3>
+　- vercel
+<h3>Source Code Management</h3>
+　- Git/GitHub
+<h3>Others</h3>
+　- SendGrid
+<br/>　- React-Three-Fiber
