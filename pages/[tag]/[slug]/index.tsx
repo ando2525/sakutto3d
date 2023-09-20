@@ -241,7 +241,7 @@ export default function Post({ page, blocks }) {
     tagName === "基礎知識"
       ? "/基礎知識/3Dデータのファイル形式はどれがいい？"
       : tagName === "Spline"
-      ? "/spline/Splineのプロパティパネルについて学ぶ"
+      ? "/Spline/Splineのプロパティパネルについて学ぶ"
       : "/R3F/【R3F】より魅せる！おすすめコンポーネント①";
   const title2 =
     tagName === "基礎知識"
@@ -253,7 +253,7 @@ export default function Post({ page, blocks }) {
     tagName === "基礎知識"
       ? "/基礎知識/3Dデータの表示速度を向上させるために知っておくべきこと"
       : tagName === "Spline"
-      ? "/spline/Splineのツールバーについて学ぶ"
+      ? "/Spline/Splineのツールバーについて学ぶ"
       : "/R3F/【R3F】より魅せる！おすすめコンポーネント②";
   const title3 =
     tagName === "基礎知識"
