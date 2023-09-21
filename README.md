@@ -22,3 +22,5 @@
 <h3>Others</h3>
 　- SendGrid
 <br/>　- React-Three-Fiber
+
+Notionで記事を作成し、APIを利用して記事内容を表示させています。
