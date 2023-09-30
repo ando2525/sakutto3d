@@ -26,7 +26,7 @@ export function Footer() {
                 当サイトについて
               </li> */}
               <li className="text-center mt-6 sm:mt-0">
-                <Link href="/form">お問い合わせ</Link>
+                <Link href="/contact">お問い合わせ</Link>
               </li>
             </ul>
           </nav>
